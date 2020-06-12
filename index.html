@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Timer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <h1 class="display-4">Simple Countdown Timer</h1>
+      <p class="lead"></p>
+      <hr class="my-4">
+      <p>1. Input amount of seconds to count down.</p>
+      <p>2. Press "Start" to start the timer.</p>
+      <p>3. Press "Pause" to pause the timer.</p>
+    </div>
+    <div class="timer">
+      <div class="controls">
+        <input id="duration" value="30" />
+        <div>
+          <button id="start">START</button>
+          <button id="pause">PAUSE</button>
+        </div>
+      </div>
+      <svg class="dial">
+        <circle fill="transparent" stroke="#81D5CF" stroke-width="15" r="190" cx="0" cy="200"
+          transform="rotate(-90 100 100)" />
+      </svg>
+    </div>
+  </div>
+
+  <script src="timer.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
